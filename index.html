@@ -1,0 +1,91 @@
+<html>  
+<head>
+		<title>Poshan Aahar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+    		<h1>poshan aahar</h1>	
+			<form>
+				enter pat :- <input type="text" id="pat" />
+					<input type="button" onClick="multiplyBy()" Value="calculate" /><br><br>
+				<table>
+					<tr>
+						<td>1. tandul</td>       
+						<td>(100 grm)</td>
+						<td><font color="green"><span id = "v1"></span> grm</font></td>
+						<td><font color="blue"><span id = "v11"></span> kg</font></td>
+					</tr>
+						<td>2. dal</td>
+						<td>(20 grm)</td>
+						<td><font color="green"><span id = "v2"></span> grm</font></td>
+						<td><font color="blue"><span id = "v22"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>3. tel</td>
+						<td>(5 grm)</td>
+						<td><font color="green"><span id = "v3"></span> grm</font></td>
+						<td><font color="blue"><span id = "v33"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>4. halad</td>
+						<td>(0.7 grm)</td>
+						<td><font color="green"><span id = "v4"></span> grm</font></td>
+						<td><font color="blue"><span id = "v44"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>5. mith</td>
+						<td>(3 grm)</td>
+						<td><font color="green"><span id = "v5"></span> grm</font></td>
+						<td><font color="blue"><span id = "v55"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>6. jire</td>
+						<td>(0.1 grm)</td>
+						<td><font color="green"><span id = "v6"></span> grm</font></td>
+						<td><font color="blue"><span id = "v66"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>7. mohari</td>
+						<td>(0.1 grm)</td>
+						<td><font color="green"><span id = "v7"></span> grm</font></td>
+						<td><font color="blue"><span id = "v77"></span> kg</font></td>
+					</tr>
+					<tr>
+						<td>8. kanda lasun masala</td>
+						<td>(1.65 grm)</td>
+						<td><font color="green"><span id = "v8"></span> grm</font></td>
+						<td><font color="blue"><span id = "v88"></span> kg</font></td>
+					</tr>
+				</table>
+		<script>
+			function multiplyBy()
+			{
+			        num1 = document.getElementById("pat").value;
+			        document.getElementById("v1").innerHTML = num1 * 100;
+					document.getElementById("v11").innerHTML = (num1 * 100)/1000;
+					document.getElementById("v2").innerHTML = num1 * 20;
+					document.getElementById("v22").innerHTML = (num1 * 20)/1000;
+					document.getElementById("v3").innerHTML = num1 * 5;
+					document.getElementById("v33").innerHTML = (num1 * 5)/1000;
+					n4 = num1 * 0.7;
+					n44 = (num1 * 0.7)/1000;
+					document.getElementById("v4").innerHTML = n4.toFixed(3);
+					document.getElementById("v44").innerHTML = n44.toFixed(3);
+					document.getElementById("v5").innerHTML = num1 * 3;
+					document.getElementById("v55").innerHTML = (num1 * 3)/1000;
+					n6 = num1 * 0.1;
+					n66 = (num1 * 0.1)/1000;
+					document.getElementById("v6").innerHTML = n6.toFixed(3);
+					document.getElementById("v66").innerHTML = n66.toFixed(3);
+					document.getElementById("v7").innerHTML = n6.toFixed(3);
+					document.getElementById("v77").innerHTML = n66.toFixed(3);
+					n8 = num1 * 1.65;
+					n88 = (num1 * 1.65)/1000;
+					document.getElementById("v8").innerHTML = n8.toFixed(3);
+					document.getElementById("v88").innerHTML = n88.toFixed(3);
+			}
+
+
+		</script>		
+	  </body>
+<html>
